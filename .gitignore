@@ -6,7 +6,6 @@
 /.idea
 /.vagrant
 /nbproject
-.evn.example
 Homestead.json
 Homestead.yaml
 npm-debug.log
