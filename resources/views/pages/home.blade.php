@@ -14,7 +14,7 @@
                         <article>
 
                             <div class="info">
-                                    <div class="city"><span>Miasto:</span> {{ $city->name }}</div>
+                                    <div class="city"><span>Miasto:</span> <a href="{{ route('pages.city', $city->id) }}">{{ $city->name }}</a></div>
                                     <div class="night"></div>
 
                                     <div class="temp">{{ $city->weathers[0]->temp }}</div>

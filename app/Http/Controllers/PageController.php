@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\City;
 
 class PageController extends Controller
@@ -12,5 +11,11 @@ class PageController extends Controller
         $cities = City::all();
         
         return view('pages.home', compact('cities'));
+    }
+    
+    public function city($id) {
+        $city = City::find($id);
+        
+        return view('pages.city', compact('city'));
     }
 }

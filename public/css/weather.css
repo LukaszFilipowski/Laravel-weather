@@ -131,9 +131,10 @@ article {
 
 svg {
 	color: #fff;
-	fill: currentColor;
 }
-
+.city a {
+    color: white !important;
+}
 
 .wind svg {
 	width: 18px;

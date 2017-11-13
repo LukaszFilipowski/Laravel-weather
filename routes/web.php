@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'PageController@index')->name('pages.index');
+Route::get('city/{id}', 'PageController@city')->name('pages.city');
 
 Route::get('cities', 'CityController@index')->name('cities.index');
 Route::get('cities/create', 'CityController@create')->name('cities.create');
