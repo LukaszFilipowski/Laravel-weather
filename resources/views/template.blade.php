@@ -96,6 +96,7 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{{ route('pages.index') }}">Strona główna</a></li>
                         <li><a href="{{ route('cities.index') }}">Zarządzanie miastami</a></li>
                     </ul>
                 </div>
