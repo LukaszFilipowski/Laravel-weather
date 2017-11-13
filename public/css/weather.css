@@ -112,13 +112,14 @@ article {
 	-webkit-align-self: center;
 	-ms-flex-item-align: center;
 	align-self: center;
-
+        font-size: 11px;
 	overflow: visible;
 
 }
 
 .icon img {
-    width: 90px;
+    width: 65px;
+    margin-bottom: 5px;
 }
 
 .temp {
