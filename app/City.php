@@ -19,7 +19,7 @@ class City extends Model
     public function weathers() 
     {
         
-        return $this->hasMany('App\Weather');
+        return $this->hasMany('App\Weather')->orderBy('created_at', 'desc');
     }
     
     public function getWeatherForCity() 
