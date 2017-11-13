@@ -12,4 +12,9 @@ class City extends Model
     
     protected $table = 'cities';
     protected $primaryKey = 'id';
+    
+    public function weathers() {
+        
+        return $this->hasMany('App\Weather');
+    }
 }
