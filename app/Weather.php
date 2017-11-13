@@ -13,12 +13,14 @@ class Weather extends Model
     protected $table = 'weathers';
     protected $primaryKey = 'id';
     
-    public function city() {
+    public function city() 
+    {
         
         return $this->belongsTo('App\City');
     }
     
-    public function params() {
+    public function params() 
+    {
         
         return $this->hasMany('App\WeatherParam');
     }

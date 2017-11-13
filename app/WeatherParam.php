@@ -13,7 +13,8 @@ class WeatherParam extends Model
     protected $table = 'weather_params';
     protected $primaryKey = 'id';
     
-    public function weather() {
+    public function weather() 
+    {
         
         return $this->belongsTo('App\Weather');
     }
