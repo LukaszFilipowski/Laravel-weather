@@ -16,6 +16,18 @@ class City extends Model
     protected $table = 'cities';
     protected $primaryKey = 'id';
     
+    public function delete() 
+    {
+        foreach ($this->weathers as $weather) {
+            foreach ($weather->params as $param) {
+                $param->delete();
+            }
+            $weather->delete();
+        }
+        
+        return parent::delete();
+    }
+    
     public function weathers() 
     {
         
