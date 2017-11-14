@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\City;
-use Session;
+use Artisan;
 
 class CityController extends Controller
 {
@@ -40,7 +40,7 @@ class CityController extends Controller
         $city->name = $request->get('name');
         
         if ($city->save()) {
-            
+            Artisan::call('getWeatherFrom:Onet', []);
             return redirect()->route('cities.index')->withSuccess('Pomyślnie '.($id == null ? 'dodano' : 'edytowano').' miasto.');
         }
         

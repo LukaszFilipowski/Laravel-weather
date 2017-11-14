@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    @if(isset($cities[0]))
+    @if (isset($cities[0]))
         <table id="table" class="table table-hover">
             <thead>
                 <tr>
